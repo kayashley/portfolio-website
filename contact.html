@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Kayla Chan - Portfolio</title>
+            <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+            <link rel="stylesheet" type="text/css" href="css/normalize.css">
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="css/style.production.css">
+        </head>
+
+<body>
+<!-- Header and the Main Navigation -->
+    <header class="page-header">
+    <!-- Logo image here ! -->
+        <img src="img/logo.png" alt="kayla-logo" class="page-header__item">
+            <nav class="main-navigation page-header__item">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+                        <a href="index.html" role="menuitem" class="navigation_list__item">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+                    </li>
+                    <li>
+                        <a href="work.html" role="menuitem" class="navigation_list__item">Projects</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="contact.html" role="menuiten" class="navigation-list__item navigation-list__item--active">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+
+<!-- Body -->
+
+<div class="contact">
+	<h1>Contact</h1>
+    <form action method="post" id="contact-form" class="grid">
+        <label class="standard-label" for="contact-email">E-mail: </label>	
+        <input type="email" id="contact-email" required>
+        <br>
+        <label class="standard-label">Telephone: </label>
+        <input type="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+        <br>
+        <label class="standard-label">Message: </label>
+        <textarea maxlength="240" required></textarea>
+        <br>
+    </form>
+
+    <div class="center-align">
+        <input type="submit" name="Send message">
+    </div>
+
+    <div>
+        Kayla C<br>
+        123 Boston Rd.<br>
+        Boston, MA<br>
+        <br>
+        <a href="tel:+11234566789">Tel +1 123 456 6789</a>
+        <br>
+            <a href="mailto:kaylac@careerfoundry.com">kaylac@careerfoundry.com</a>
+	</div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer">
+	<div class="social-media">
+		<p>Find me on</p>
+		<!-- Github -->
+		<img src="img/github.svg" alt="Github" width="30" height="30">
+		<!-- Twitter -->
+		<img src="img/twitter.svg" alt="Twitter" width="30" height="30">
+		<!-- LinkedIn -->
+		<img src="img/linkedin.svg" alt="LinkedIn" width="30" height="30">
+	</div>
+</footer>
+	<script src="js/tota11y.min.js"></script>
+	</body>
+</html>
