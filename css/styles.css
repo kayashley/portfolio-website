@@ -4,6 +4,13 @@
 	box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #D7BDE2;
+    --secondary-color: #E8DAEF;
+    --tertiary-color: #BB8FCE;
+    --grid-color: #C2ACD0;
+    --font-color: #FFFF;
+}
 
 
 /* -- HEADER -- */
@@ -52,18 +59,18 @@
 body {
 	font-family: Source Sans Pro;
 	font-weight: 40;
-	background-color: #D7BDE2;
+	background-color: var(--primary-color);
 }
 
 h1 {
 	font-size: 50px;
-    color: #FFFF;
+    color: var(--font-color);
 }
 
 .profile {
 	max-width: 700px;
 	margin: 0 auto;
-    color: #FFFF;
+    color: var(--font-color);
 }
 
 .profile__portrait {
@@ -78,7 +85,7 @@ h1 {
 	max-width: 700px;
 	margin: 0 auto;
 	margin-bottom: 60px;
-    color: #FFFF;
+    color: var(--font-color);
 }
 
 
@@ -89,7 +96,7 @@ h1 {
 
 .contact {
     text-align: center;
-    color: #FFFF;
+    color: var(--font-color);
 }
 
 #contact-form {
@@ -118,7 +125,7 @@ h1 {
 /* -- ANCHOR LINKS -- */
 
 a {
-	color: #FFFF;
+	color: var(--font-color);
 }
 
 
@@ -129,12 +136,12 @@ a:hover, a:focus{
 
 a:visited {
 	/*visited link */
-	color: #FFFF;
+	color: var(--font-color);
 }
 
 a:active {
 	/* selected link */ 
-	color: #E8DAEF;
+	color: var(--secondary-color);
 }
 
 
@@ -146,8 +153,8 @@ a:active {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #BB8FCE;
-  color: white;
+  background-color: var(--tertiary-color);
+  color: var(--font-color);
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
@@ -169,8 +176,8 @@ button:focus,
 
 .button {
     font-size: 16px;
-	background-color: #BB8FCE;
-	color: #FFFF;
+	background-color: var(--tertiary-color);
+	color: var(--font-color);
 } 
 
 
@@ -269,8 +276,8 @@ button:focus,
 	}
 
 	.grid__item {
-        color: #FFFF;
-		background-color: #C2ACD0;
+        color: var(--font-color);
+		background-color: var(--grid-color);
 		width: auto;
 		min-height: auto;
 		margin-right: 40px;
@@ -338,6 +345,6 @@ button:focus,
 	flex-direction: column;
 	text-align: center;
 	margin-top: 20px;
-    color: #FFFF;
+    color: var(--font-color);
 }
 
