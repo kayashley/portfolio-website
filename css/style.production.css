@@ -103,6 +103,14 @@ h1 {
     color: var(--font-color);
 }
 
+.about-table {
+	max-width: 700px;
+	margin: 0 auto;
+	margin-left: 220px;
+	margin-bottom: 40px;
+	padding: 10px;
+
+}
 
 .about-svg {
 	max-width: 700px;
@@ -115,15 +123,27 @@ h1 {
     text-align: center;
     color: var(--font-color);
 }
-
+/*
 #contact-form {
 	text-align: center;
 	padding: 20px;
 }
-
+*/
 .center-align {
     text-align: center;
     margin-bottom: 30px;
+}
+
+.contact-grid {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+	grid-template-columns: 1fr fr 1fr;
+	grid-gap: 10px;
+	margin: 0;
+	padding-left: 600px;
+	padding-right: 600px;
+
 }
 
 
@@ -296,6 +316,11 @@ button:focus,
 }
 /*-- END GRID FALLBACK --*/
 
+.grid {
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
 
 @supports (display: grid) {
 	.grid {
@@ -303,7 +328,7 @@ button:focus,
 		display: grid;
 		-ms-grid-columns: 1fr 30px 1fr 30px 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 30px;
+		grid-gap: 60px;
 		margin: 0;
 	}
 
@@ -312,8 +337,8 @@ button:focus,
 		background-color: var(--grid-color);
 		width: auto;
 		min-height: auto;
-		margin-right: 40px;
-		margin-left: 40px;
+		margin-right: 10px;
+		margin-left: 10px;
 		padding: 20px;
 	}
 }
@@ -331,7 +356,7 @@ button:focus,
 	.grid {
 		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
-		grid-gap: 10px;
+		grid-gap: 60px;
 	}
 	.grid-item:last-child {
 		grid-column: auto / auto;
@@ -346,7 +371,7 @@ button:focus,
 	.grid {
 		-ms-grid-columns: 1fr 10px 1fr;
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 10px;
+		grid-gap: 60px;
 	}
 	.grid-item:last-child {
 		grid-column: auto / auto;
@@ -360,7 +385,7 @@ button:focus,
 
 @media all and (max-width: 750px) {
 	.grid {
-		grid-gap: 10px;
+		grid-gap: 60px;
 	}
 	.grid-item:last-child {
 		grid-column: auto / auto;
